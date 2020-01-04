@@ -1,12 +1,11 @@
 ---
 # action.yml
-name: 'Periodic Labeler'
+name: 'Periodic Labeler fixed'
 description: 'Periodically label pull requests based on changed files'
-author: Pawel Krupa (paulfantom)
+author: Pawel Krupa (paulfantom) + Jarek Potiuk (potiuk)
 runs:
   using: 'docker'
-  #image: 'Dockerfile'
-  image: 'docker://quay.io/paulfantom/periodic-labeler:latest'
+  image: 'potiuk/periodic-labeler/periodic-labeler@master'
 branding:
   icon: "tag"
   color: "white"
