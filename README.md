@@ -26,7 +26,7 @@ jobs:
   labeler:
     runs-on: ubuntu-latest
     steps:
-      - uses: paulfantom/periodic-labeler@master
+      - uses: docker://docker.pkg.github.com/potiuk/periodic-labeler/periodic-labeler:v0.0.5
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_REPOSITORY: ${{ github.repository }}
